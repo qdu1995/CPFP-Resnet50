@@ -1,0 +1,18 @@
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/layers/s_pooling_layer.hpp:6,
+                 from src/caffe/layers/s_pooling_layer.cpp:5:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+src/caffe/layers/s_pooling_layer.cpp: In instantiation of ‘void caffe::SuperpixelPoolingLayer<Dtype>::Backward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/s_pooling_layer.cpp:263:1:   required from here
+src/caffe/layers/s_pooling_layer.cpp:207:3: warning: enumeration value ‘PoolingParameter_PoolMethod_STOCHASTIC’ not handled in switch [-Wswitch]
+   switch (this->layer_param_.pooling_param().pool()) {
+   ^
+src/caffe/layers/s_pooling_layer.cpp: In instantiation of ‘void caffe::SuperpixelPoolingLayer<Dtype>::Backward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/s_pooling_layer.cpp:263:1:   required from here
+src/caffe/layers/s_pooling_layer.cpp:207:3: warning: enumeration value ‘PoolingParameter_PoolMethod_STOCHASTIC’ not handled in switch [-Wswitch]
